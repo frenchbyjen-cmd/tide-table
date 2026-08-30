@@ -1,0 +1,15 @@
+{
+  "name": "Tide Table",
+  "short_name": "Tide Table",
+  "start_url": "/?table=7",
+  "display": "standalone",
+  "background_color": "#F3EBDD",
+  "theme_color": "#F3EBDD",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

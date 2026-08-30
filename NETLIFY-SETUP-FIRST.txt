@@ -1,0 +1,39 @@
+TIDE TABLE V2 — DO THIS FIRST
+
+1) In Netlify user settings:
+   Applications > Personal access tokens > New access token
+
+2) Copy your token. Keep it private.
+
+3) In your Tide Table Netlify project:
+   Project configuration > Environment variables > Add variable
+
+   NAME:
+   NETLIFY_BLOBS_TOKEN
+
+   VALUE:
+   [paste your Netlify personal access token]
+
+   Make sure the variable is available to FUNCTIONS.
+
+4) Trigger a NEW DEPLOY.
+
+5) Open:
+   https://YOUR-SITE.netlify.app/.netlify/functions/health
+
+   You want:
+   "ok": true
+
+6) Open:
+   https://YOUR-SITE.netlify.app/.netlify/functions/orders
+
+   You want:
+   {"orders":[]}
+
+7) Then test:
+   /?table=7
+   /staff
+   PIN: 2026
+
+IMPORTANT:
+Never send your token to anyone and never paste it into the app source code.
